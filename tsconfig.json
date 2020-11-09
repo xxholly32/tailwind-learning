@@ -9,6 +9,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
@@ -27,6 +28,7 @@
     ]
   },
   "include": [
+    "src/**/*.md",
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
