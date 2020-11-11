@@ -145,7 +145,7 @@
 - **你的 CSS 停止增长**. 使用传统的方法，每次添加新特性时，CSS 文件都会变大。使用 utilities 程序，所有东西都是可重用的，所以你很少需要编写新的 CSS。
 - **做出改变感觉更安全**. CSS 是全局的，当你改变它时，你永远不会知道你正在破坏什么。而 HTML 中的 class 是本地的，因此您可以更改它们，而不必担心出其他问题。
 
-当您意识到使用预定义的 utility class 专门处理 HTML 是多么高效时，那么任何其他方式工作都会感觉像是一种折磨。
+当您意识到使用预定义的 `通用 class`ss`HTML 是多么高效时，那么任何其他方式工作都会感觉像是一种折磨。
 
 ## 为什么不直接使用内联样式？
 
@@ -237,6 +237,6 @@
 
 - [By The Numbers: A Year and a Half with Atomic CSS](https://medium.com/@johnpolacek/by-the-numbers-a-year-and-half-with-atomic-css-39d75b1263b4) by John Polacek
 - [Building a Scalable CSS Architecture](https://blog.algolia.com/redesigning-our-docs-part-4-building-a-scalable-css-architecture/) by Sarah Dayan of Algolia
-- [Diana Mounter on using utility classes at GitHub](http://www.fullstackradio.com/75), a podcast interview
+- [Diana Mounter on using ``通用 classes`s``es`tHub](http://www.fullstackradio.com/75), a podcast interview
 
 更多信息，check out [The Case for Atomic/Utility-First CSS](https://johnpolacek.github.io/the-case-for-atomic-css/), curated by [John Polacek](https://twitter.com/johnpolacek).

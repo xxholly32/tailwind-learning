@@ -4,7 +4,13 @@ import Intro from "../docs/getting-started/Introduction.md";
 import BrowserSupport from "../docs/getting-started/browser-support.md";
 import IntelliSense from "../docs/getting-started/IntelliSense.md";
 import ControllingFileSize from "../docs/getting-started/controlling-file-size.md";
-import UtillityFirst from "../docs/core-concepts/Utillity-First.md";
+
+import UtillityFirst from "../docs/core-concepts/utillity-first.md";
+import ResponsiveDesign from "../docs/core-concepts/responsive-design.md";
+import PseudoClassVariants from "../docs/core-concepts/pseudo-class-variants.md";
+import AddingBaseStyles from "../docs/core-concepts/adding-base-styles.md";
+import ExtractingComponents from "../docs/core-concepts/extracting-components.md";
+import AddingNewUtilities from "../docs/core-concepts/adding-new-utilities.md";
 
 declare type Menu = {
   name: string;
@@ -49,6 +55,31 @@ const menuConfig: Array<SubMenu> = [
         name: "实用主义",
         filePath: UtillityFirst,
         path: "utillity-first",
+      },
+      {
+        name: "响应式设计",
+        filePath: ResponsiveDesign,
+        path: "responsive-design",
+      },
+      {
+        name: "伪类",
+        filePath: PseudoClassVariants,
+        path: "pseudo-class-variants",
+      },
+      {
+        name: "添加基础样式",
+        filePath: AddingBaseStyles,
+        path: "adding-base-styles",
+      },
+      {
+        name: "提取组件",
+        filePath: ExtractingComponents,
+        path: "extracting-components",
+      },
+      {
+        name: "添加工具",
+        filePath: AddingNewUtilities,
+        path: "adding-new-utilities",
       },
     ],
   },

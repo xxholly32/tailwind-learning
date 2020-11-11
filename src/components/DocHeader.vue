@@ -3,7 +3,7 @@
     <div class="container relative mx-auto px-4 flex items-center h-full">
       <div class="w-1/3">
         <router-link class="block mr-4 text-2xl" to="/">
-          vite-components-playground
+          Tailwind 中文指南
         </router-link>
       </div>
       <div class="w-1/2"></div>
