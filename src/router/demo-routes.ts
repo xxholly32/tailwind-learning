@@ -11,6 +11,7 @@ import PseudoClassVariants from "../docs/core-concepts/pseudo-class-variants.md"
 import AddingBaseStyles from "../docs/core-concepts/adding-base-styles.md";
 import ExtractingComponents from "../docs/core-concepts/extracting-components.md";
 import AddingNewUtilities from "../docs/core-concepts/adding-new-utilities.md";
+import FunctionsAndDirectives from "../docs/core-concepts/functions-and-directives.md";
 
 declare type Menu = {
   name: string;
@@ -77,9 +78,14 @@ const menuConfig: Array<SubMenu> = [
         path: "extracting-components",
       },
       {
-        name: "添加工具",
+        name: "自定义通用样式",
         filePath: AddingNewUtilities,
         path: "adding-new-utilities",
+      },
+      {
+        name: "Tailwind 语法糖",
+        filePath: FunctionsAndDirectives,
+        path: "functions-and-directives",
       },
     ],
   },
