@@ -2,6 +2,8 @@
 
 > hover、 focus 等样式处理
 
+---
+
 类似于 Tailwind 如何处理[响应式设计](./responsive-design)，hover、 focus 等元素可以通过使用适当的伪类前缀来实现。
 
   <form class="flex w-full max-w-sm mx-auto">

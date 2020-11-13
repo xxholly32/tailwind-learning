@@ -1,6 +1,8 @@
 # 添加基础样式
 
-在 Tailwind 上层加入全局基础样式的最佳实践
+> 在 Tailwind 上层加入全局基础样式的最佳实践
+
+---
 
 基本(或全局)样式是样式表开头的样式，它为基本 HTML 元素(如 a 、headings 等)设置缺省值，或者重置，比如[box-sizing reset](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)。
 

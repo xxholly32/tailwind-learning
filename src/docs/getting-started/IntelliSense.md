@@ -2,6 +2,8 @@
 
 > 面向 Visual Studio 代码的智能化 Tailwind CSS 工具。
 
+---
+
 通过为 Visual Studio Code 用户提供高级功能，如自动不全功能、语法突显和 lint 功能，从而增强了 Tailwind 开发体验。
 
 ![](https://tailwindcss.com/_next/static/media/intellisense.5ec85ce2a1d8616ed8519c23837e34a2.png)

@@ -1,6 +1,8 @@
 # 自定义通用样式
 
-扩展 Tailwind ，实现自定义的 class
+> 扩展 Tailwind ，实现自定义的 class
+
+---
 
 尽管 Tailwind 提供了一个非常全面的 `通用 classes` 集合，但是您可能会遇到需要添加一些自己的`通用 classes` 的情况。
 

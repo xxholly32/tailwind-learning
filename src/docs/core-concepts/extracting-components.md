@@ -2,6 +2,8 @@
 
 > 处理重复并保证项目的可维护性
 
+---
+
 Tailwind 鼓励采用[实用优先](https://tailwindcss.com/docs/utility-first)的工作流，即最初只使用 ``通用 classes`` 实现设计，以避免过早抽象。
 
 <!-- A marketing page card built entirely with ``通用 classes`` -->

@@ -1,5 +1,9 @@
 # Tailwind 语法糖
 
+> 介绍 Tailwind 自定义函数和指令
+
+---
+
 ## @tailwind
 
 使用 @Tailwind 指令将 Tailwind 的 `base`, `components`, `utilities` 和 `screens` 插入到 CSS 中。

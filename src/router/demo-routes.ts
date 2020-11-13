@@ -13,6 +13,9 @@ import ExtractingComponents from "../docs/core-concepts/extracting-components.md
 import AddingNewUtilities from "../docs/core-concepts/adding-new-utilities.md";
 import FunctionsAndDirectives from "../docs/core-concepts/functions-and-directives.md";
 
+import Configuration from "../docs/customization/configuration.md";
+import Theme from "../docs/customization/theme.md";
+
 declare type Menu = {
   name: string;
   filePath: ComponentOptions;
@@ -89,6 +92,21 @@ const menuConfig: Array<SubMenu> = [
       },
     ],
   },
+  {
+    name: "个性化设置",
+    children: [
+      {
+        name: "自定义配置",
+        filePath: Configuration,
+        path: "configuration",
+      },
+      {
+        name: "主题",
+        filePath: Theme,
+        path: "theme",
+      },
+    ]
+  }
 ];
 
 export { menuConfig };
