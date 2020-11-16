@@ -5,7 +5,7 @@ import BrowserSupport from "../docs/getting-started/browser-support.md";
 import IntelliSense from "../docs/getting-started/IntelliSense.md";
 import ControllingFileSize from "../docs/getting-started/controlling-file-size.md";
 
-import UtillityFirst from "../docs/core-concepts/utillity-first.md";
+import UtillityFirst from "../docs/core-concepts/Utillity-First.md";
 import ResponsiveDesign from "../docs/core-concepts/responsive-design.md";
 import PseudoClassVariants from "../docs/core-concepts/pseudo-class-variants.md";
 import AddingBaseStyles from "../docs/core-concepts/adding-base-styles.md";
@@ -15,6 +15,7 @@ import FunctionsAndDirectives from "../docs/core-concepts/functions-and-directiv
 
 import Configuration from "../docs/customization/configuration.md";
 import Theme from "../docs/customization/theme.md";
+import Breakpoints from "../docs/customization/breakpoints.md";
 
 declare type Menu = {
   name: string;
@@ -104,6 +105,11 @@ const menuConfig: Array<SubMenu> = [
         name: "主题",
         filePath: Theme,
         path: "theme",
+      },
+      {
+        name: "样式断点",
+        filePath: Breakpoints,
+        path: "breakpoints",
       },
     ]
   }
