@@ -1,10 +1,12 @@
 import { ComponentOptions } from "vue";
 
+// 开始
 import Intro from "../docs/getting-started/Introduction.md";
 import BrowserSupport from "../docs/getting-started/browser-support.md";
 import IntelliSense from "../docs/getting-started/IntelliSense.md";
 import ControllingFileSize from "../docs/getting-started/controlling-file-size.md";
 
+// 核心概念
 import UtillityFirst from "../docs/core-concepts/Utillity-First.md";
 import ResponsiveDesign from "../docs/core-concepts/responsive-design.md";
 import PseudoClassVariants from "../docs/core-concepts/pseudo-class-variants.md";
@@ -13,9 +15,31 @@ import ExtractingComponents from "../docs/core-concepts/extracting-components.md
 import AddingNewUtilities from "../docs/core-concepts/adding-new-utilities.md";
 import FunctionsAndDirectives from "../docs/core-concepts/functions-and-directives.md";
 
+// 个性化设置
 import Configuration from "../docs/customization/configuration.md";
 import Theme from "../docs/customization/theme.md";
 import Breakpoints from "../docs/customization/breakpoints.md";
+import CustomizingSpacing from "../docs/customization/customizing-spacing.md";
+import ConfiguringVariants from "../docs/customization/configuring-variants.md";
+import Plugins from "../docs/customization/plugins.md";
+
+// 基础样式
+import Preflight from "../docs/base-styles/preflight.md";
+
+// 布局
+import Container from "../docs/layout/container.md";
+import BoxSizing from "../docs/layout/box-sizing.md";
+import Display from "../docs/layout/display.md";
+import Float from "../docs/layout/float.md";
+import Clear from "../docs/layout/clear.md";
+import ObjectFit from "../docs/layout/object-fit.md";
+import ObjectPosition from "../docs/layout/object-position.md";
+import Overflow from "../docs/layout/overflow.md";
+import OverscrollBehavior from "../docs/layout/overscroll-behavior.md";
+import Position from "../docs/layout/position.md";
+import TopFightBottomLeft from "../docs/layout/top-right-bottom-left.md";
+import Visibility from "../docs/layout/visibility.md";
+import ZIndex from "../docs/layout/z-index.md";
 
 declare type Menu = {
   name: string;
@@ -111,8 +135,103 @@ const menuConfig: Array<SubMenu> = [
         filePath: Breakpoints,
         path: "breakpoints",
       },
-    ]
-  }
+      {
+        name: "自定义间距",
+        filePath: CustomizingSpacing,
+        path: "customizing-spacing",
+      },
+      {
+        name: "自定义伪类",
+        filePath: ConfiguringVariants,
+        path: "configuring-variants",
+      },
+      {
+        name: "编写插件",
+        filePath: Plugins,
+        path: "plugins",
+      },
+    ],
+  },
+  {
+    name: "基础样式",
+    children: [
+      {
+        name: "基础样式",
+        filePath: Preflight,
+        path: "preflight",
+      },
+    ],
+  },
+  {
+    name: "布局",
+    children: [
+      {
+        name: "Container",
+        filePath: Container,
+        path: "container",
+      },
+      {
+        name: "BoxSizing",
+        filePath: BoxSizing,
+        path: "box-sizing",
+      },
+      {
+        name: "Display",
+        filePath: Display,
+        path: "display",
+      },
+      {
+        name: "Float",
+        filePath: Float,
+        path: "float",
+      },
+      {
+        name: "Clear",
+        filePath: Clear,
+        path: "clear",
+      },
+      {
+        name: "Object Fit",
+        filePath: ObjectFit,
+        path: "object-fit",
+      },
+      {
+        name: "Object Position",
+        filePath: ObjectPosition,
+        path: "object-position",
+      },
+      {
+        name: "Overflow",
+        filePath: Overflow,
+        path: "overflow",
+      },
+      {
+        name: "Overscroll Behavior",
+        filePath: OverscrollBehavior,
+        path: "overscroll-behavior",
+      },
+      {
+        name: "Position",
+        filePath: Position,
+        path: "position",
+      },
+      {
+        name: "Top/Fight/Bottom/Left",
+        filePath: TopFightBottomLeft,
+        path: "top-right-bottom-left",
+      },
+      {
+        name: "Visibility",
+        filePath: Visibility,
+        path: "visibility",
+      },
+      {
+        name: "Z-Index",
+        filePath: ZIndex,
+        path: "z-index",
+      }
+    ],
+  },
 ];
 
 export { menuConfig };
