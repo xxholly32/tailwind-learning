@@ -171,7 +171,7 @@ const menuConfig: Array<SubMenu> = [
         path: "container",
       },
       {
-        name: "BoxSizing",
+        name: "Box Sizing",
         filePath: BoxSizing,
         path: "box-sizing",
       },
