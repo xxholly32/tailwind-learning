@@ -14,7 +14,7 @@ Tailwind 不会自动添加任何样式的浏览器前缀。相反，我们建�
 
 要使用它，请通过 npm 安装它:
 
-```
+```bash
 # Using npm
 npm install autoprefixer
 
@@ -24,7 +24,7 @@ yarn add autoprefixer
 
 然后把它添加到你的 PostCSS 配置的插件列表的最后:
 
-```
+```js
 module.exports = {
   plugins: [
     require('tailwindcss'),

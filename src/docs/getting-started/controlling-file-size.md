@@ -20,7 +20,7 @@
 
 [PurgeCSS](https://purgecss.com/) (我们在引擎中使用的库) 会查找 HTML 中的 classes。它不会尝试解析你的 HTML，寻找类属性或者动态执行你的 JavaScript，它只是在整个文件中寻找任何与这个正则表达式匹配的字符串:
 
-```
+```js
 /[^<>"'`\s]*[^<>"'`\s:]/g
 ```
 
@@ -28,13 +28,13 @@
 
 不要使用字符串连接来创建 class 名：
 
-```
+```html
 <div :class="text-{{ error ? 'red' : 'green' }}-600"></div>
 ```
 
 动态地选择一个完整的 class 名：
 
-```
+```html
 <div :class="{{ error ? 'text-red-600' : 'text-green-600' }}"></div>
 ```
 
@@ -44,7 +44,7 @@
 
 首先，使用 `purge` 选项为所有模板文件提供一个路径数组:
 
-```
+```js
 // tailwind.config.js
 module.exports = {
   purge: [

@@ -8,12 +8,12 @@
 
 使用 @Tailwind 指令将 Tailwind 的 `base`, `components`, `utilities` 和 `screens` 插入到 CSS 中。
 
-```
+```css
 /**
  * This injects Tailwind's base styles and any base styles registered by
  * plugins.
  */
-@tailwind base;
+\@tailwind base;
 
 /**
  * This injects Tailwind's component classes and any component classes
@@ -43,7 +43,7 @@
 
 当您在 HTML 中找到希望提取到新组件的公共 `通用 class` 则需要使用这个指令。
 
-```
+```css
 .btn {
   @apply font-bold py-2 px-4 rounded;
 }
@@ -57,7 +57,7 @@
 
 规则可以列在单独一行，也可以多行 @apply:
 
-```
+```css
 .btn {
   @apply font-bold;
   @apply py-2;
@@ -77,7 +77,7 @@
 
 默认情况下，任何与 @apply 内联的规则都会被删除，以避免产生问题:
 
-```
+```css
 /* Input */
 .foo {
   color: blue !important;
@@ -99,7 +99,7 @@
 
 如果你想 @apply 一个现有的 class 并且需要 `!important`，那么在结尾地加上 `!important`:
 
-```
+```css
 /* Input */
 .btn {
   @apply font-bold py-2 px-4 rounded !important;
@@ -118,7 +118,7 @@
 
 注意，如果你使用 Sass/SCSS，你需要使用 Sass 的插值特性:
 
-```
+```css
 .btn {
   @apply font-bold py-2 px-4 rounded #{!important};
 }
@@ -126,7 +126,7 @@
 
 重要的是要明白 @apply `不能用于` 内联其他、伪类或响应式。相反，要在普通的 css 伪选择器或新媒体查询中使用它:
 
-```
+```css
 /* Won't work: */
 .btn {
   @apply block bg-red-500;
@@ -150,7 +150,7 @@
 
 如果你已经为你的工具[配置了一个前缀](https://tailwindcss.com/docs/configuration#prefix)，你可以选择省略前缀当你使用@apply，如果你喜欢简洁的语法:
 
-```
+```css
 /* Both of these will work */
 .btn {
   @apply tw-font-bold tw-py-2 tw-px-4 tw-rounded;
@@ -164,7 +164,7 @@
 
 使用 @layer 指令告诉 Tailwind 属于一组自定义样式的 “块”。在 `base`, `components`, `utilities` 有效。
 
-```
+```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -207,7 +207,7 @@ Tailwind 自动将 @layer 指令中的 CSS 移动到相应的 @Tailwind 规则�
 
 您可以通过在 @variant 指令中包装它们的定义来生成响应式、`hover`, `focus`, `active`和其他伪类。
 
-```
+```css
 @variants focus, hover {
   .rotate-0 {
     transform: rotate(0deg);
@@ -220,7 +220,7 @@ Tailwind 自动将 @layer 指令中的 CSS 移动到相应的 @Tailwind 规则�
 
 这将生成以下 CSS:
 
-```
+```css
 .rotate-0 {
   transform: rotate(0deg);
 }
@@ -247,7 +247,7 @@ Tailwind 自动将 @layer 指令中的 CSS 移动到相应的 @Tailwind 规则�
 
 所以，如果你想让 focus 优先于 hover，那么确保 focus 在 hover 之后:
 
-```
+```css
 /* Input */
 @variants hover, focus {
   .banana {
@@ -273,7 +273,7 @@ Tailwind 自动将 @layer 指令中的 CSS 移动到相应的 @Tailwind 规则�
 
 通过将 class 的定义包装在 @responsive 指令中，您可以生成自己 class 的响应式:
 
-```
+```css
 @responsive {
   .bg-gradient-brand {
     background-image: linear-gradient(blue, green);
@@ -283,7 +283,7 @@ Tailwind 自动将 @layer 指令中的 CSS 移动到相应的 @Tailwind 规则�
 
 使用默认断点，这将生成以下类:
 
-```
+```css
 .bg-gradient-brand {
   background-image: linear-gradient(blue, green);
 }
@@ -329,7 +329,7 @@ Tailwind 自动将 @layer 指令中的 CSS 移动到相应的 @Tailwind 规则�
 
 不用写下面的代码如下:
 
-```
+```css
 @media (min-width: 640px) {
   /* ... */
 }
@@ -337,7 +337,7 @@ Tailwind 自动将 @layer 指令中的 CSS 移动到相应的 @Tailwind 规则�
 
 ... 而是可以使用 @screen 指令并引用 sm 断点:
 
-```
+```css
 @screen sm {
   /* ... */
 }
@@ -349,7 +349,7 @@ Tailwind 自动将 @layer 指令中的 CSS 移动到相应的 @Tailwind 规则�
 
 如果你只想为声明的一部分引用主题配置中的一个值，这可能是 @apply 的一个有用的替代方法:
 
-```
+```css
 .content-area {
   height: calc(100vh - theme('spacing.12'));
 }
@@ -359,7 +359,7 @@ Tailwind 自动将 @layer 指令中的 CSS 移动到相应的 @Tailwind 规则�
 
 **Wrong**：访问嵌套颜色值时不要使用破折号语法
 
-```
+```css
 .btn-blue {
   background-color: theme('colors.blue-500');
 }
@@ -367,7 +367,7 @@ Tailwind 自动将 @layer 指令中的 CSS 移动到相应的 @Tailwind 规则�
 
 **Right**：使用 `.` 表示法访问嵌套的颜色值
 
-```
+```css
 .btn-blue {
   background-color: theme('colors.blue.500');
 }

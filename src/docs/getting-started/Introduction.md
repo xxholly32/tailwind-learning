@@ -69,9 +69,8 @@ module.exports = {
 
 一些简单项目，可以利用 Tailwind CLI 工具转化成 css 文件使用：
 
-```
+```bash
 npx tailwindcss build styles.css -o output.css
-
 ```
 
 运行 `npx tailwindcss help build` 命令去学习更多有关 CLI 的配置。
