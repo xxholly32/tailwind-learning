@@ -17,6 +17,6 @@ git add -A
 git commit -m 'deploy'
 
 # 部署到 https://xxholly32.github.io/tailwind-learning
-# git push -f git@github.com:xxholly32/tailwind-learning.git master:gh-pages
+git push -f git@github.com:xxholly32/tailwind-learning.git master:gh-pages
 
 cd -

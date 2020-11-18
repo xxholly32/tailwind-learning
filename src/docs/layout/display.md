@@ -328,9 +328,9 @@
 
 ### 响应式和伪类
 
-默认情况下，只为 display class 只和响应式变量生效。
+默认情况下，display 只和响应式变量生效。
 
-您可以通过修改 `tailwind.config.js` 文件的变量部分中的 `display` 属性来控制为 `display` 生成变量。
+您可以通过修改 `tailwind.config.js` 文件的变量部分中的 `variants` 属性来控制为 `display` 生成变量。
 
 例如，这个配置也会生成 `hover` 和 `focus` :
 
@@ -347,7 +347,7 @@
 
 ## 禁用
 
-如果您不打算在项目中使用 `display`，可以通过在配置文件的 `correplugins` 部分将 `display` 属性设置为 `false` 来完全禁用它们:
+如果您不打算在项目中使用 `display`，可以通过在配置文件的 `corePlugins` 部分将 `display` 属性设置为 `false` 来完全禁用它们:
 
 ```js
 // tailwind.config.js

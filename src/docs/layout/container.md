@@ -97,7 +97,7 @@ module.exports = {
 
 ### 禁用响应式变量
 
-如果你想禁用响应式变量，你可以通过在 `tailwind.config.js` 文件的变量部分设置 `container` 空数组来实现:
+如果你想禁用响应式变量，你可以通过在 `tailwind.config.js` 文件的 `variants` 部分设置 `container` 空数组来实现:
 
 ```js
 // tailwind.config.js
@@ -111,7 +111,7 @@ module.exports = {
 
 ### 完全禁用
 
-如果你不打算使用 `.container` 你可以在配置文件的 `correplugins` 部分设置 `container` 属性为 `false` 来完全禁用它:
+如果你不打算使用 `.container` 你可以在配置文件的 `corePlugins` 部分设置 `container` 属性为 `false` 来完全禁用它:
 
 ```js
   // tailwind.config.js
