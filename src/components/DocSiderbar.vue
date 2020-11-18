@@ -7,13 +7,13 @@
     >
       <div
         class="px-6 pt-6 overflow-y-auto text-base lg:text-sm lg:pt-8 lg:pl-6 lg:pr-8 sticky?lg:h-(screen-16)"
-        v-for="subMenu in menuConfig"
+        v-for="subMenu in menuConfig" :key="subMenu.name"
       >
         <h2 class="mb-3 lg:mb-2 uppercase font-bold lg:text-xs text-gray-500">
           {{ subMenu.name }}
         </h2>
         <ul>
-          <li class="mb-3 lg:mb-1" v-for="menu in subMenu.children">
+          <li class="mb-3 lg:mb-1" v-for="menu in subMenu.children" :key="menu.path">
             <router-link
               class="px-2 -mx-2 py-1 transition duration-200 ease-in-out relative block text-gray-600 font-medium"
               :class="{ 'hover:translate-x-2px' : $route.name !== menu.name, 'hover:text-gray-900' : $route.name !== menu.name }"
