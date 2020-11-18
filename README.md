@@ -1,24 +1,7 @@
 # tailwind-learning
 
-## Project setup
-```
-yarn install
-```
+## 介绍
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+本项目是 [tailwindcss.com](https://tailwindcss.com/) 的中文翻译
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+暂无校对
