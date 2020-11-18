@@ -57,4 +57,33 @@ Tailwind 使默认的所有 [preflight 里的元素](https://tailwindcss.com/doc
 
 ### 响应式和伪类
 
-默认情况下，对于盒大小的样式只生成响应变量。
+默认情况下，盒大小的样式可以和响应式变量一起使用。
+
+您可以通过修改 `tailwind.config.js` 文件的 `variants` 部分中的 `boxSize` 属性来控制为 `box-sizing` 生成变量。
+
+例如，这个配置也会生成 `hover` 和 `focus` :
+
+```js
+ // tailwind.config.js
+  module.exports = {
+    variants: {
+      // ...
+-     boxSizing: ['responsive'],
++     boxSizing: ['responsive', 'hover', 'focus'],
+    }
+  }
+```
+
+## 禁用
+
+如果您不打算在项目中使用 `box-sizing`，可以通过在配置文件的 `correplugins` 部分将 `boxSizing` 属性设置为 `false` 来完全禁用它们:
+
+```js
+// tailwind.config.js
+  module.exports = {
+    corePlugins: {
+      // ...
++     boxSizing: false,
+    }
+  }
+```
