@@ -4,15 +4,15 @@
 
 | class                | 属性                           |
 | -------------------- | ------------------------------ |
-| .object-bottom       | object-position: bottom;       |
-| .object-center       | object-position: center;       |
-| .object-left         | object-position: left;         |
-| .object-left-bottom  | object-position: left bottom;  |
-| .object-left-top     | object-position: left top;     |
-| .object-right        | object-position: right;        |
-| .object-right-bottom | object-position: right bottom; |
-| .object-right-top    | object-position: right top;    |
-| .object-top          | object-position: top;          |
+| object-bottom       | object-position: bottom;       |
+| object-center       | object-position: center;       |
+| object-left         | object-position: left;         |
+| object-left-bottom  | object-position: left bottom;  |
+| object-left-top     | object-position: left top;     |
+| object-right        | object-position: right;        |
+| object-right-bottom | object-position: right bottom; |
+| object-right-top    | object-position: right top;    |
+| object-top          | object-position: top;          |
 
 ## 用法
 
@@ -125,9 +125,10 @@
  // tailwind.config.js
   module.exports = {
     variants: {
-      // ...
--     objectPosition: ['responsive'],
-+     objectPosition: ['responsive', 'hover', 'focus'],
+      extend: {
+        // ...
++       objectPosition: ['hover', 'focus'],
+      }
     }
   }
 ```

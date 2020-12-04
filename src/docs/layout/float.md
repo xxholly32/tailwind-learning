@@ -4,10 +4,10 @@
 
 | class        | 属性                                                                           |
 | ------------ | ------------------------------------------------------------------------------ |
-| .float-right | float: right;                                                                  |
-| .float-left  | float: left;                                                                   |
-| .float-none  | float: none;                                                                   |
-| .clearfix    | &::after { <br/> content: ""; <br/> display: table; <br/> clear: both; <br/> } |
+| float-right | float: right;                                                                  |
+| float-left  | float: left;                                                                   |
+| float-none  | float: none;                                                                   |
+| clearfix    | &::after { <br/> content: ""; <br/> display: table; <br/> clear: both; <br/> } |
 
 ## Float right
 
@@ -126,15 +126,16 @@
 
 您可以通过修改 `tailwind.config.js` 文件的变量部分中的 `variants` 属性来控制为 `float` 生成变量。
 
-例如，这个配置也会生成 `hover` 和 `focus` :
+例如，这个配置会生成 `hover` 和 `focus` 的伪类:
 
 ```js
  // tailwind.config.js
   module.exports = {
     variants: {
-      // ...
--     float: ['responsive'],
-+     float: ['responsive', 'hover', 'focus'],
+      extend: {
+        // ...
++       float: ['hover', 'focus'],
+      }
     }
   }
 ```

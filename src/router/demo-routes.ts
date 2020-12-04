@@ -41,6 +41,13 @@ import TopFightBottomLeft from "../docs/layout/top-right-bottom-left.md";
 import Visibility from "../docs/layout/visibility.md";
 import ZIndex from "../docs/layout/z-index.md";
 
+import FlexDirection from "../docs/flexbox/flex-direction.md";
+import FlexWrap from "../docs/flexbox/flex-wrap.md";
+import Flex from "../docs/flexbox/flex.md";
+import FlexGrow from "../docs/flexbox/flex-grow.md";
+import FlexShrink from "../docs/flexbox/flex-shrink.md";
+import Order from "../docs/flexbox/order.md";
+
 declare type Menu = {
   name: string;
   filePath: ComponentOptions;
@@ -232,6 +239,41 @@ const menuConfig: Array<SubMenu> = [
       }
     ],
   },
+  {
+    name: "FlexBox",
+    children: [
+      {
+        name: "Flex Direction",
+        filePath: FlexDirection,
+        path: "flex-direction",
+      },
+      {
+        name: "Flex Wrap",
+        filePath: FlexWrap,
+        path: "flex-wrap",
+      },
+      {
+        name: "Flex",
+        filePath: Flex,
+        path: "flex",
+      },
+      {
+        name: "Flex Grow",
+        filePath: FlexGrow,
+        path: "flex-grow",
+      },
+      {
+        name: "Flex Shrink",
+        filePath: FlexShrink,
+        path: "flex-shrink",
+      },
+      {
+        name: "Order",
+        filePath: Order,
+        path: "order",
+      },
+    ]
+  }
 ];
 
 export { menuConfig };

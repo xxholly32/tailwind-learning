@@ -4,7 +4,7 @@
 
 | class      | 断点        | 属性               |
 | ---------- | ----------- | ------------------ |
-| .container | 空          | width: 100%;       |
+| container | 空          | width: 100%;       |
 |            | sm (640px)  | max-width: 640px;  |
 |            | md (768px)  | max-width: 768px;  |
 |            | lg (1024px) | max-width: 1024px; |

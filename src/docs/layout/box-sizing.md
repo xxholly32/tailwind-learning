@@ -4,8 +4,8 @@
 
 | class        | 属性                     |
 | ------------ | ------------------------ |
-| .box-border  | box-sizing: border-box;  |
-| .box-content | box-sizing: content-box; |
+| box-border  | box-sizing: border-box;  |
+| box-content | box-sizing: content-box; |
 
 ## 包含 borders 和 padding
 
@@ -67,9 +67,10 @@ Tailwind 使默认的所有 [preflight 里的元素](https://tailwindcss.com/doc
  // tailwind.config.js
   module.exports = {
     variants: {
-      // ...
--     boxSizing: ['responsive'],
-+     boxSizing: ['responsive', 'hover', 'focus'],
+      extend: {
+        // ...
++       boxSizing: ['hover', 'focus'],
+      }
     }
   }
 ```

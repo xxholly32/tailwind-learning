@@ -4,10 +4,10 @@
 
 | class        | 属性          |
 | ------------ | ------------- |
-| .clear-left  | clear: left;  |
-| .clear-right | clear: right; |
-| .clear-both  | clear: both;  |
-| .clear-none  | clear: none;  |
+| clear-left  | clear: left;  |
+| clear-right | clear: right; |
+| clear-both  | clear: both;  |
+| clear-none  | clear: none;  |
 
 ## Clear left
 
@@ -179,9 +179,10 @@
  // tailwind.config.js
   module.exports = {
     variants: {
-      // ...
--     clear: ['responsive'],
-+     clear: ['responsive', 'hover', 'focus'],
+      extend: {
+        // ...
++       clear: ['responsive', 'hover', 'focus'],
+      }
     }
   }
 ```
